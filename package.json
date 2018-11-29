@@ -1,0 +1,26 @@
+{
+  "name": "imba-test-project",
+  "version": "0.0.1",
+  "description": "Just a small project to test the capabilities of imba",
+  "main": "index.js",
+  "scripts": {
+    "start": "imba src/server.imba",
+    "dev": "webpack-dev-server --port 9000",
+    "build": "webpack",
+    "watch": "webpack --watch --progress --colors --display-modules"
+  },
+  "keywords": [
+    "imba"
+  ],
+  "author": "Fábio Rodrigues",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "imba": "^1.4.1",
+    "webpack": "^4.26.0",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  }
+}
