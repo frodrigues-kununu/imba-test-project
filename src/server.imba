@@ -1,7 +1,7 @@
 var express = require 'express'
 var server = express()
 
-server.use(express.static(path.join(__dirname, './dist')))
+server.use(express.static('./dist'))
 
 server.get '/' do |req,res|
 	var html = <html>
@@ -10,10 +10,9 @@ server.get '/' do |req,res|
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="/dist/index.css" media="screen">
 		<body>
-			<base href="/">
 			<script src="/client.js">
 	
-	return res.send path.join(__dirname, './dist', html.toString)
+	return res.send html.toString
 
 var port = process:env.PORT or 8080
 
